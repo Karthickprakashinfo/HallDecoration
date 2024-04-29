@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>CelestialCherish HomePage</title>
+      <link rel="stylesheet" href="styles.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+
+   <h1 class="logo">CelestialCherish</h1>
+      <div class="btn">
+         <span class="fas fa-bars"></span>
+      </div>
+      <nav class="sidebar">
+         <div class="text">
+            CC
+         </div>
+         <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li>
+               <a href="#" class="feat-btn">Categories
+               <span class="fas fa-caret-down first"></span>
+               </a>
+               <ul class="feat-show">
+                  <li><a href="products.html">Marriage Hall</a></li>
+                  <li><a href="products.html">Birthday Party</a></li>
+               </ul>
+            </li>
+          
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+              <li>
+                <a href="#" class="serv-btn">Account
+                <span class="fas fa-caret-down second"></span>
+                </a>
+                <ul class="serv-show">
+                   <li><a href="signup.html">Sign Up</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                </ul>
+             </li>
+         </ul>
+         <div class="icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+         </div>
+      </nav>
+
+      
+      <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to our Decoration Hub</h1>
+            <p>Transforming venues into enchanting spaces</p>
+            <a href="#services" class="btn2">Explore Services</a>
+        </div>
+    </section>
+
+      <!-- portfolio -->
+      <section class="portfolio" id="portfolio">
+        <div class="portfolio-content">
+            <h2>Portfolio</h2>
+            <div class="portfolio-item">
+                <img src="./Images/img1.jpg" alt="Portfolio 1">
+                <div class="overlay">
+                    <h3>Wedding Reception</h3>
+                    <p>Transforming a simple hall into a dreamy reception venue with elegant decor and lighting.</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="./Images/cor.jpg" alt="Portfolio 2">
+                <div class="overlay">
+                    <h3>Corporate Event</h3>
+                    <p>Creating a professional yet welcoming atmosphere for a corporate event with modern decor.</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="./Images/birthday.jpg" alt="Portfolio 3">
+                <div class="overlay">
+                    <h3>Birthday Celebration</h3>
+                    <p>Adding a festive touch to a birthday party with colorful decorations and fun themes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="service">
+        <div class="services-content">
+            <h2>Our Services</h2>
+            <div class="service">
+                <img src="./Images/img1.jpg" alt="Service 1">
+                <h3>Theme-based Decorations</h3>
+                <p>Create a unique atmosphere with our theme-based decoration packages tailored to your event.</p>
+            </div>
+            <div class="service">
+                <img src="./Images/img2.jpeg" alt="Service 2">
+                <h3>Floral Arrangements</h3>
+                <p>Add a touch of elegance with our exquisite floral arrangements for every corner of your venue.</p>
+            </div>
+            <div class="service3">
+                <img src="./Images/img3.jpeg" alt="Service 3">
+                <h3>Lighting Setups</h3>
+                <p>Illuminate your event with our expertly designed lighting setups, creating a magical ambiance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Event?</h2>
+            <p>Contact us today to discuss your decoration needs and let's make your event unforgettable!</p>
+            <a href="contact.html" class="btn3">Get in Touch</a>
+        </div>
+    </section>
+
+   
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Marriage Hall Decoration Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+      <script>
+         $('.btn').click(function(){
+           $(this).toggleClass("click");
+           $('.sidebar').toggleClass("show");
+         });
+           $('.feat-btn').click(function(){
+             $('nav ul .feat-show').toggleClass("show");
+             $('nav ul .first').toggleClass("rotate");
+           });
+           $('.serv-btn').click(function(){
+             $('nav ul .serv-show').toggleClass("show1");
+             $('nav ul .second').toggleClass("rotate");
+           });
+           $('nav ul li').click(function(){
+             $(this).addClass("active").siblings().removeClass("active");
+           });
+      </script>
+      <script src="main.js"></script>
+   </body>
+</html>

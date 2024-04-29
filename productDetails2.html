@@ -1,0 +1,157 @@
+<html>
+
+<head>
+
+    <title>Sprite Rose page</title>
+    <link href="./Assets/style5.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+
+                <div class="slider">
+                    <div class="product">
+
+                        <img src="./Images/pd21.jpeg" alt="" onclick="clickme(this)">
+                        <img src="./Images/pd22.jpeg" alt="" onclick="clickme(this)">
+                        <img src="./Images/pd23.jpeg" alt="" onclick="clickme(this)">
+                        <img src="./Images/pd24.jpeg" alt="" onclick="clickme(this)">
+
+                    </div>
+                    <div class="preview">
+                        <img src="./Images/pd21.jpeg" id="imagebox" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+
+                <div class="content">
+                 
+                    <h2>Transform your wedding venue into a dreamy paradise with our exquisite marriage hall decoration
+                        settings. Our expert decorators will work closely with you to create the perfect ambiance for
+                        your special day, ensuring every detail reflects your unique style and vision.</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="price">Magnificent</p>
+                    <button type="button">
+                       
+                        Book Now</button>
+                        <button type="button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Add to cart</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="related">
+            <h2>related items</h2>
+            <div class="row">
+                <div class="columns">
+                    <div class="items">
+                        <img src="./Images/img1.jpg" alt="">
+                        <div class="details">
+                            <p>Woman Brown Solid Biker Jacket</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+
+                            <p>Inr ₹ 120.00</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="./Images/img2.jpeg" alt="">
+                        <div class="details">
+                            <p>Navy Blue Flared Palazzos</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+
+                            <p>Inr ₹ 80.00</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="./Images/img3.jpeg" alt="">
+                        <div class="details">
+                            <p>Jacquard Banarasi Dupatta</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+
+                            <p>Inr ₹ 110.00</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="./Images/img4.jpeg" alt="">
+                        <div class="details">
+                            <p>Printed Straight Kurta</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+
+                            <p>Inr ₹ 100.00</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script>
+        function clickme(smallImg) {
+
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
